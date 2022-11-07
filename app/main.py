@@ -28,6 +28,6 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"message": "Git chnages.."}
+    return {"message": "Hello world"}
 
 
