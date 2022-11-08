@@ -28,6 +28,6 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"message": "pushing to ubuntu server"}
+    return {"message": "confirm push to my ubuntu server was successfull."}
 
 
