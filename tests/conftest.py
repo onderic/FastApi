@@ -4,7 +4,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from app.main import app
-
 from app.config import settings
 from app.database import get_db
 from app.database import Base
@@ -49,7 +48,7 @@ def client(session):
 
 @pytest.fixture
 def test_user2(client):
-    user_data = {"email": "sanjeev123@gmail.com",
+    user_data = {"email": "onderi@gmail.com",
                  "password": "password123"}
     res = client.post("/users/", json=user_data)
 
@@ -62,7 +61,7 @@ def test_user2(client):
 
 @pytest.fixture
 def test_user(client):
-    user_data = {"email": "sanjeev@gmail.com",
+    user_data = {"email": "onderi2@gmail.com",
                  "password": "password123"}
     res = client.post("/users/", json=user_data)
 
